@@ -9,7 +9,8 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
-    public class AddSharedSkill
+    //Please add : Utils.Start behind of class name like that public class AddSharedSkill : Utils.Start before running
+    public class AddSharedSkill : Utils.Start
     {
         [Given(@"I clicked on the button Share Skill under Profile page")]
         public void GivenIClickedOnTheButtonShareSkillUnderProfilePage()
@@ -65,6 +66,7 @@ namespace SpecflowTests.AcceptanceTest
             //Upload Work Samples
             Driver.driver.FindElement(By.XPath("//*[@id='service-listing-section']/div[2]/div/form/div[9]/div/div[2]/section/div/label/div/span/i")).Click();
             Thread.Sleep(1000);
+            //Please, make a txt file and change the path for you 
             System.Windows.Forms.SendKeys.SendWait(@"C:\Users\HarrisVicky\Desktop\fortesting.txt");
             System.Windows.Forms.SendKeys.SendWait("{Enter}");
             //Choose Active

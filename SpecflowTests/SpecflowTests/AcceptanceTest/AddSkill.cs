@@ -9,6 +9,7 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
+    //Please add : Utils.Start behind of class name like that public class AddSkill : Utils.Start before running
     public class AddSkill 
     {
         [Given(@"I clicked on the Skills tab under Profile page")]

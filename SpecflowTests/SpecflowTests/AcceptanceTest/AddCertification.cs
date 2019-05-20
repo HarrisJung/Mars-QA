@@ -9,6 +9,7 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
+    //Please add : Utils.Start behind of class name like that public class AddCertification : Utils.Start before running
     public class AddCertification
     {
         [Given(@"I clicked on the Certifications tab under Profile page")]

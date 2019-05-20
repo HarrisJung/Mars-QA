@@ -9,6 +9,7 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
+    //Please add : Utils.Start behind of class name like that public class AddLanguage : Utils.Start before running
     public class AddLanguage
     {
         [Given(@"I clicked on the Language tab under Profile page")]

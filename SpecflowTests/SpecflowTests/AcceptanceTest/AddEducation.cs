@@ -9,6 +9,7 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
+    //Please add : Utils.Start behind of class name like that public class AddEducation : Utils.Start before running
     public class AddEducation
     {
         [Given(@"I clicked on the Education tab under Profile page")]

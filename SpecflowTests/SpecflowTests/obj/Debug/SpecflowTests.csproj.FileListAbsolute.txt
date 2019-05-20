@@ -93,3 +93,22 @@ C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\Specflow
 C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.csproj.CopyComplete
 C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.dll
 C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.pdb
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\chromedriver.exe
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\SpecflowTests.dll.config
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\SpecflowTests.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\SpecflowTests.pdb
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\nunit.framework.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\RelevantCodes.ExtentReports.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\SpecflowPages.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\System.ValueTuple.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\TechTalk.SpecFlow.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\SpecflowPages.pdb
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\bin\Debug\nunit.framework.xml
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.csprojAssemblyReference.cache
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.csproj.CoreCompileInputs.cache
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.csproj.CopyComplete
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowTests\obj\Debug\SpecflowTests.pdb

@@ -9,7 +9,8 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests
 {
     [Binding]
-    public class LookIntoMyInfoBySearchingSkillName : Utils.Start
+    //Please add : Utils.Start behind of class name like that public class LookIntoMyInfoBySearchingSkillName : Utils.Start before running
+    public class LookIntoMyInfoBySearchingSkillName
     {
 
         [Given(@"people type skill name on the search bar for 'Test Analyst'")]
