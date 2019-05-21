@@ -1,3 +1,5 @@
+Version 1.00 2019/05/19
+
 All test cases consist of that 	1. managing my profile such as add, edit and delete
 				2. managing share skill such as add, edit and delete
 				3. THe ways of that people look into my details by searching 				   as skillname, categories and username
@@ -5,3 +7,8 @@ All test cases consist of that 	1. managing my profile such as add, edit and del
 ¡ØI have added a reference that System.Windows.Forms for uploading the file on the browser. Please add a reference that System.Windows.Forms
 
 Right click on References under SpecflowTests project -> Click add a reference -> Find the reference, check it then, click OK
+
+Version 1.10 2019/05/21
+resolved error for automation test
+added more scenarios
+added negative scenarios in SpecFlowFeature2 file

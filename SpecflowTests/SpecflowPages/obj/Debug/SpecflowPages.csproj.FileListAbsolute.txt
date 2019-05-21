@@ -62,3 +62,18 @@ C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\Specflow
 C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csproj.CopyComplete
 C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.dll
 C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.pdb
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\chromedriver.exe
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\SpecflowPages.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\SpecflowPages.pdb
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\RelevantCodes.ExtentReports.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\WebDriver.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\WebDriver.Support.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\WebDriver.xml
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\bin\Debug\WebDriver.Support.xml
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csprojAssemblyReference.cache
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csproj.CoreCompileInputs.cache
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csproj.CopyComplete
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.dll
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.pdb

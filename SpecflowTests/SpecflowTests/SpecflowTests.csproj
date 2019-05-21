@@ -96,6 +96,11 @@
     <Compile Include="AcceptanceTest\AddSharedSkill.cs" />
     <Compile Include="AcceptanceTest\AddSkill.cs" />
     <Compile Include="AcceptanceTest\LookIntoMyInfoBySearchingSkillName.cs" />
+    <Compile Include="AcceptanceTest\SpecFlowFeature2.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecFlowFeature2.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AcceptanceTest\SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>
@@ -105,6 +110,10 @@
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AcceptanceTest\SpecFlowFeature2.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SpecFlowFeature2.feature.cs</LastGenOutput>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="AcceptanceTest\SpecFlowFeature1.feature">

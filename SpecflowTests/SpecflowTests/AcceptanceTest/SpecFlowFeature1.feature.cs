@@ -304,18 +304,52 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to write a description")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        public virtual void CheckIfUserCouldAbleToWriteADescription()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to write a description", ((string[])(null)));
+#line 72
+this.ScenarioSetup(scenarioInfo);
+#line 73
+ testRunner.Given("I clicked the pencil icon next to description under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 74
+ testRunner.When("I write about my information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 75
+ testRunner.Then("that information should be displayed on description section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to set details of availability, Hours and Earn Target un" +
+            "der profile page")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        public virtual void CheckIfUserCouldAbleToSetDetailsOfAvailabilityHoursAndEarnTargetUnderProfilePage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to set details of availability, Hours and Earn Target un" +
+                    "der profile page", ((string[])(null)));
+#line 77
+this.ScenarioSetup(scenarioInfo);
+#line 78
+testRunner.Given("I clicked the pencil icon next to Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add a Shared Skill on my listings")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
         public virtual void CheckIfUserCouldAbleToAddASharedSkillOnMyListings()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a Shared Skill on my listings", ((string[])(null)));
-#line 72
+#line 81
 this.ScenarioSetup(scenarioInfo);
-#line 73
+#line 82
  testRunner.Given("I clicked on the button Share Skill under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 74
+#line 83
  testRunner.When("I add a new shared skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 75
+#line 84
  testRunner.Then("the lists of shared skill you have been posting should be displayed on my listing" +
                     "s", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -328,15 +362,15 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToEditASharedSkillOnMyListings()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a Shared Skill on my listings", ((string[])(null)));
-#line 78
+#line 87
 this.ScenarioSetup(scenarioInfo);
-#line 79
+#line 88
  testRunner.Given("I clicked on the Manage Listings tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 80
+#line 89
  testRunner.When("I clicked the pencil icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 81
+#line 90
  testRunner.And("I edit a shared skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 82
+#line 91
  testRunner.Then("that updated shared skill should be displayed  on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -348,15 +382,15 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToDeleteASharedSkillOnMyListings()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to delete a Shared Skill on my listings", ((string[])(null)));
-#line 85
+#line 94
 this.ScenarioSetup(scenarioInfo);
-#line 86
+#line 95
  testRunner.Given("I clicked on the Manage Listings tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 87
+#line 96
  testRunner.When("I clicked the X icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 88
+#line 97
  testRunner.And("I clicked the button Yes on Alert page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 89
+#line 98
  testRunner.Then("that shared skill should be deleted from my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -368,13 +402,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfThePeopleCouldAbleToLookIntoMyDetailsBySearchingSkillname()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if the people could able to look into my details by searching skillname", ((string[])(null)));
-#line 92
+#line 101
 this.ScenarioSetup(scenarioInfo);
-#line 93
+#line 102
  testRunner.Given("people type skill name on the search bar for \'Test Analyst\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 94
+#line 103
  testRunner.When("people click my Info on a result of user\'s search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 95
+#line 104
  testRunner.Then("the details of my shared skill should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -386,17 +420,17 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfThePeopleCouldAbleToLookIntoMyDetailsByExploringCategories()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if the people could able to look into my details by exploring categories", ((string[])(null)));
-#line 97
+#line 106
 this.ScenarioSetup(scenarioInfo);
-#line 98
+#line 107
  testRunner.Given("the categories should be displayed on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 99
+#line 108
  testRunner.When("people click Programming & Tech on the category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 100
+#line 109
  testRunner.And("people click QA under the category of Programming & Tech", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 101
+#line 110
  testRunner.And("people click my Info on a result of user\'s search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 102
+#line 111
  testRunner.Then("the details of my shared skill should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -408,13 +442,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfThePeopleCouldAbleToLookIntoMyDetailsBySearchingUsername()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if the people could able to look into my details by searching username", ((string[])(null)));
-#line 104
+#line 113
 this.ScenarioSetup(scenarioInfo);
-#line 105
+#line 114
  testRunner.Given("the categories should be displayed on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 106
+#line 115
  testRunner.When("people fill username on username search bar for \"harris jung\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 107
+#line 116
  testRunner.Then("the details of my shared skill should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

@@ -10,7 +10,7 @@ namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
     //Please add : Utils.Start behind of class name like that public class AddSharedSkill : Utils.Start before running
-    public class AddSharedSkill : Utils.Start
+    public class AddSharedSkill
     {
         [Given(@"I clicked on the button Share Skill under Profile page")]
         public void GivenIClickedOnTheButtonShareSkillUnderProfilePage()

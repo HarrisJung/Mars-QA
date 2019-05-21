@@ -68,6 +68,15 @@ Scenario: Check if user could able to delete a certification
 	When I click the X icon on my listings
 	Then that certification should be deleted from my listings
 
+#Writing my description
+Scenario: Check if user could able to write a description
+	Given I clicked the pencil icon next to description under profile page
+	When I write about my information
+	Then that information should be displayed on description section
+
+Scenario: Check if user could able to set details of availability, Hours and Earn Target under profile page
+Given I clicked the pencil icon next to Availability
+
 #Adding a shared skill
 Scenario: Check if user could able to add a Shared Skill on my listings
 	Given I clicked on the button Share Skill under Profile page
