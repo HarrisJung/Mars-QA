@@ -6,7 +6,7 @@ using System.Threading;
 using TechTalk.SpecFlow;
 using static SpecflowPages.CommonMethods;
 
-namespace SpecflowTests
+namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
     //Please add : Utils.Start behind of class name like that public class LookIntoMyInfoBySearchingSkillName : Utils.Start before running

@@ -10,5 +10,6 @@ Right click on References under SpecflowTests project -> Click add a reference -
 
 Version 1.10 2019/05/21
 resolved error for automation test
+added scenarios outline
 added more scenarios
 added negative scenarios in SpecFlowFeature2 file

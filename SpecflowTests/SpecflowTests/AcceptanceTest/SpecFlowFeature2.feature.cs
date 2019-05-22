@@ -207,6 +207,90 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check response when a langauge is already exist in the language list on profile p" +
+            "age")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Test the system response from invalid input or unexpected user behaviour")]
+        public virtual void CheckResponseWhenALangaugeIsAlreadyExistInTheLanguageListOnProfilePage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when a langauge is already exist in the language list on profile p" +
+                    "age", ((string[])(null)));
+#line 39
+this.ScenarioSetup(scenarioInfo);
+#line 40
+ testRunner.Given("I clicked on the Languages tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 41
+ testRunner.When("I entered a language which is already exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 42
+ testRunner.Then("it shoud be not added and displayed alert message that This language is already e" +
+                    "xist in your language list.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check response when a skill is already exist in the language list on profile page" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Test the system response from invalid input or unexpected user behaviour")]
+        public virtual void CheckResponseWhenASkillIsAlreadyExistInTheLanguageListOnProfilePage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when a skill is already exist in the language list on profile page" +
+                    "", ((string[])(null)));
+#line 44
+this.ScenarioSetup(scenarioInfo);
+#line 45
+ testRunner.Given("I clicked on the Skills tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 46
+ testRunner.When("I entered a skill which is already exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 47
+ testRunner.Then("it shoud be not added and displayed alert message that This skill is already exis" +
+                    "t in your skill list.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check response when a education is already exist in the language list on profile " +
+            "page")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Test the system response from invalid input or unexpected user behaviour")]
+        public virtual void CheckResponseWhenAEducationIsAlreadyExistInTheLanguageListOnProfilePage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when a education is already exist in the language list on profile " +
+                    "page", ((string[])(null)));
+#line 48
+this.ScenarioSetup(scenarioInfo);
+#line 49
+ testRunner.Given("I clicked on the Educations tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 50
+ testRunner.When("I entered a education which is already exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 51
+ testRunner.Then("it shoud be not added and displayed alert message that This information is alread" +
+                    "y exist.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check response when a certification is already exist in the language list on prof" +
+            "ile page")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Test the system response from invalid input or unexpected user behaviour")]
+        public virtual void CheckResponseWhenACertificationIsAlreadyExistInTheLanguageListOnProfilePage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when a certification is already exist in the language list on prof" +
+                    "ile page", ((string[])(null)));
+#line 52
+ this.ScenarioSetup(scenarioInfo);
+#line 53
+ testRunner.Given("I clicked on the Certifications tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 54
+ testRunner.When("I entered a certification which is already exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 55
+ testRunner.Then("it shoud be not added and displayed alert message that This information is alread" +
+                    "y exist.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check response when it is empty on the field during adding a shared skill on shar" +
             "e skill application form page")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Test the system response from invalid input or unexpected user behaviour")]
@@ -214,13 +298,13 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when it is empty on the field during adding a shared skill on shar" +
                     "e skill application form page", ((string[])(null)));
-#line 40
+#line 57
 this.ScenarioSetup(scenarioInfo);
-#line 41
+#line 58
  testRunner.Given("I clicked on the button Share Skill under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 42
+#line 59
  testRunner.When("I entered nothing on the field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 43
+#line 60
  testRunner.Then("it should be rejected with alert message to fill the empty fields which are neces" +
                     "sary to write", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -235,14 +319,14 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when the types of word are out of scope such as Korean and special" +
                     " characters on share skill application form page", ((string[])(null)));
-#line 45
+#line 62
 this.ScenarioSetup(scenarioInfo);
-#line 46
+#line 63
  testRunner.Given("I clicked on the button Share Skill under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 47
+#line 64
  testRunner.When("I entered korean and special characters on the field under share skill applicatio" +
                     "n form page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 48
+#line 65
  testRunner.Then("it should be not accepted with alert message to use English alphabet or a number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -254,13 +338,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckResponseWhenSetsTheStartDateOrEndDateInThePast()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when sets the Start date or End date in the past", ((string[])(null)));
-#line 50
+#line 67
 this.ScenarioSetup(scenarioInfo);
-#line 51
+#line 68
  testRunner.Given("I clicked on the button Share Skill under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 52
+#line 69
  testRunner.When("I set past date for Start date or End date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 53
+#line 70
  testRunner.Then("it should be stopped with alert message to warn that it cannot be set to a day in" +
                     " the past", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -275,15 +359,15 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when file is uploaded which file size is over 2mb or the types whi" +
                     "ch is not supported", ((string[])(null)));
-#line 55
+#line 72
 this.ScenarioSetup(scenarioInfo);
-#line 56
+#line 73
  testRunner.Given("I clicked on the button Share Skill under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 57
+#line 74
  testRunner.When("I upload the file which size is over 2mb", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 58
+#line 75
  testRunner.And("I upload the file which the types are not supported", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 59
+#line 76
  testRunner.Then("it should be stopped with alert message that Max file size is 2 MB and supported " +
                     "file types are gif / jpeg / png / jpg / doc(x) / pdf / txt / xls(x)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -296,15 +380,34 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckResponseWhenSearchResultIsNotFound()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when search result is not found", ((string[])(null)));
-#line 62
+#line 79
 this.ScenarioSetup(scenarioInfo);
-#line 63
+#line 80
  testRunner.Given("search bar should be displayed on the website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 64
+#line 81
  testRunner.When("I search a thing which is not searchable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 65
+#line 82
  testRunner.Then("it should be displayed the message No results found, please select a new category" +
                     "! on the website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check response when shared skill Info is turned deactivated")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Test the system response from invalid input or unexpected user behaviour")]
+        public virtual void CheckResponseWhenSharedSkillInfoIsTurnedDeactivated()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check response when shared skill Info is turned deactivated", ((string[])(null)));
+#line 84
+ this.ScenarioSetup(scenarioInfo);
+#line 85
+ testRunner.Given("A shared skill Info which is I created should be displayed on Manage Listings und" +
+                    "er ListingManagement page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 86
+ testRunner.When("I clicked the button Active to deactive", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 87
+ testRunner.Then("it should be not searchable by the others", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

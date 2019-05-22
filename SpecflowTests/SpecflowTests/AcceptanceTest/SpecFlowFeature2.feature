@@ -36,6 +36,23 @@ Scenario: Check response when it is empty on the field during adding a certifica
 	When I entered nothing on the certificate field
 	Then it shoud be not added and displayed alert message to fill the empty field
 
+Scenario: Check response when a langauge is already exist in the language list on profile page
+	Given I clicked on the Languages tab under profile page
+	When I entered a language which is already exist
+	Then it shoud be not added and displayed alert message that This language is already exist in your language list.
+
+Scenario: Check response when a skill is already exist in the language list on profile page
+	Given I clicked on the Skills tab under profile page
+	When I entered a skill which is already exist
+	Then it shoud be not added and displayed alert message that This skill is already exist in your skill list.
+Scenario: Check response when a education is already exist in the language list on profile page
+	Given I clicked on the Educations tab under profile page
+	When I entered a education which is already exist
+	Then it shoud be not added and displayed alert message that This information is already exist.
+	Scenario: Check response when a certification is already exist in the language list on profile page
+	Given I clicked on the Certifications tab under profile page
+	When I entered a certification which is already exist
+	Then it shoud be not added and displayed alert message that This information is already exist.
 #Share skill application page
 Scenario: Check response when it is empty on the field during adding a shared skill on share skill application form page
 	Given I clicked on the button Share Skill under profile page
@@ -63,3 +80,8 @@ Scenario: Check response when search result is not found
 	Given search bar should be displayed on the website
 	When I search a thing which is not searchable
 	Then it should be displayed the message No results found, please select a new category! on the website
+
+	Scenario: Check response when shared skill Info is turned deactivated
+	Given A shared skill Info which is I created should be displayed on Manage Listings under ListingManagement page
+	When I clicked the button Active to deactive
+	Then it should be not searchable by the others

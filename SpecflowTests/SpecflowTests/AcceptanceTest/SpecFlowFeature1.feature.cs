@@ -83,19 +83,231 @@ namespace SpecflowTests.AcceptanceTest
             testRunner.CollectScenarioErrors();
         }
         
+        public virtual void CheckIfUserCouldAbleToAddLanguages(string language, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add languages", exampleTags);
+#line 9
+this.ScenarioSetup(scenarioInfo);
+#line 10
+ testRunner.Given("I clicked on the Langauge tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 11
+ testRunner.When(string.Format("I add new languages {0}", language), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
+ testRunner.Then(string.Format("those languages {0} should be displayed on my listings", language), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add languages: English")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "English")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:language", "English")]
+        public virtual void CheckIfUserCouldAbleToAddLanguages_English()
+        {
+#line 9
+this.CheckIfUserCouldAbleToAddLanguages("English", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add languages: Korean")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Korean")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:language", "Korean")]
+        public virtual void CheckIfUserCouldAbleToAddLanguages_Korean()
+        {
+#line 9
+this.CheckIfUserCouldAbleToAddLanguages("Korean", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add languages: Chinese")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Chinese")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:language", "Chinese")]
+        public virtual void CheckIfUserCouldAbleToAddLanguages_Chinese()
+        {
+#line 9
+this.CheckIfUserCouldAbleToAddLanguages("Chinese", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void CheckIfUserCouldAbleToAddSkills(string skill, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add skills", exampleTags);
+#line 20
+this.ScenarioSetup(scenarioInfo);
+#line 21
+ testRunner.Given("I clicked on the Skills tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 22
+ testRunner.When(string.Format("I add new skills {0}", skill), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+ testRunner.Then(string.Format("those skills {0} should be displayed on my listings", skill), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add skills: Selenium")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Selenium")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:skill", "Selenium")]
+        public virtual void CheckIfUserCouldAbleToAddSkills_Selenium()
+        {
+#line 20
+this.CheckIfUserCouldAbleToAddSkills("Selenium", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add skills: JIRA")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "JIRA")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:skill", "JIRA")]
+        public virtual void CheckIfUserCouldAbleToAddSkills_JIRA()
+        {
+#line 20
+this.CheckIfUserCouldAbleToAddSkills("JIRA", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add skills: Cucumber")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Cucumber")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:skill", "Cucumber")]
+        public virtual void CheckIfUserCouldAbleToAddSkills_Cucumber()
+        {
+#line 20
+this.CheckIfUserCouldAbleToAddSkills("Cucumber", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void CheckIfUserCouldAbleToAddEducations(string education, string degree, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add educations", exampleTags);
+#line 31
+this.ScenarioSetup(scenarioInfo);
+#line 32
+ testRunner.Given("I clicked on the Educations tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 33
+ testRunner.When(string.Format("I add new educations {0} and {1}", education, degree), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 34
+ testRunner.Then(string.Format("those educations <educations> and {0} should be displayed on my listings", degree), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add educations: Cornell")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Cornell")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:education", "Cornell")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:degree", "Bachelor")]
+        public virtual void CheckIfUserCouldAbleToAddEducations_Cornell()
+        {
+#line 31
+this.CheckIfUserCouldAbleToAddEducations("Cornell", "Bachelor", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add educations: Industry Connect")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Industry Connect")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:education", "Industry Connect")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:degree", "Diploma")]
+        public virtual void CheckIfUserCouldAbleToAddEducations_IndustryConnect()
+        {
+#line 31
+this.CheckIfUserCouldAbleToAddEducations("Industry Connect", "Diploma", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add educations: Auckland University")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Auckland University")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:education", "Auckland University")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:degree", "Master")]
+        public virtual void CheckIfUserCouldAbleToAddEducations_AucklandUniversity()
+        {
+#line 31
+this.CheckIfUserCouldAbleToAddEducations("Auckland University", "Master", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void CheckIfUserCouldAbleToAddCertifications(string certification, string from, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add certifications", exampleTags);
+#line 42
+this.ScenarioSetup(scenarioInfo);
+#line 43
+ testRunner.Given("I clicked on the Certifications tab under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 44
+ testRunner.When(string.Format("I add new certification {0} and {1}", certification, from), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 45
+ testRunner.Then("those certifications should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add certifications: Foundation Certificate in Softwar" +
+            "e Testing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Foundation Certificate in Software Testing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:certification", "Foundation Certificate in Software Testing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:from", "ISTQB")]
+        public virtual void CheckIfUserCouldAbleToAddCertifications_FoundationCertificateInSoftwareTesting()
+        {
+#line 42
+this.CheckIfUserCouldAbleToAddCertifications("Foundation Certificate in Software Testing", "ISTQB", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add certifications: Network Certificate")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Network Certificate")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:certification", "Network Certificate")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:from", "Cisco")]
+        public virtual void CheckIfUserCouldAbleToAddCertifications_NetworkCertificate()
+        {
+#line 42
+this.CheckIfUserCouldAbleToAddCertifications("Network Certificate", "Cisco", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add certifications: Security Certificate in Software " +
+            "Testing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Security Certificate in Software Testing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:certification", "Security Certificate in Software Testing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:from", "NZQA")]
+        public virtual void CheckIfUserCouldAbleToAddCertifications_SecurityCertificateInSoftwareTesting()
+        {
+#line 42
+this.CheckIfUserCouldAbleToAddCertifications("Security Certificate in Software Testing", "NZQA", ((string[])(null)));
+#line hidden
+        }
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add a language")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
         public virtual void CheckIfUserCouldAbleToAddALanguage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a language", ((string[])(null)));
-#line 9
+#line 53
 this.ScenarioSetup(scenarioInfo);
-#line 10
+#line 54
  testRunner.Given("I clicked on the Language tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
+#line 55
  testRunner.When("I add a new language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
+#line 56
  testRunner.Then("that language should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -107,13 +319,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToAddASkill()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a skill", ((string[])(null)));
-#line 14
+#line 58
 this.ScenarioSetup(scenarioInfo);
-#line 15
+#line 59
  testRunner.Given("I clicked on the Skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
+#line 60
  testRunner.When("I add a new skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 17
+#line 61
  testRunner.Then("that skill should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -125,13 +337,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToAddAEducation()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a education", ((string[])(null)));
-#line 19
+#line 63
 this.ScenarioSetup(scenarioInfo);
-#line 20
+#line 64
  testRunner.Given("I clicked on the Education tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 21
+#line 65
  testRunner.When("I add a new education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 22
+#line 66
  testRunner.Then("that education should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -143,13 +355,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToAddACertification()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a certification", ((string[])(null)));
-#line 24
+#line 68
 this.ScenarioSetup(scenarioInfo);
-#line 25
+#line 69
  testRunner.Given("I clicked on the Certifications tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 26
+#line 70
  testRunner.When("I add a new certificate", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 27
+#line 71
  testRunner.Then("that certificate should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -161,13 +373,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToEditALanguage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a language", ((string[])(null)));
-#line 30
+#line 74
 this.ScenarioSetup(scenarioInfo);
-#line 31
+#line 75
  testRunner.Given("I clicked the pencil icon on my listings under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 32
+#line 76
  testRunner.When("I edit a skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 33
+#line 77
  testRunner.Then("that updated language should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -179,13 +391,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToEditASkill()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a skill", ((string[])(null)));
-#line 35
+#line 79
 this.ScenarioSetup(scenarioInfo);
-#line 36
+#line 80
  testRunner.Given("I clicked the pencil icon on my listings under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 37
+#line 81
  testRunner.When("I edit a language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 38
+#line 82
  testRunner.Then("that updated skill should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -197,13 +409,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToEditAEducation()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a education", ((string[])(null)));
-#line 40
+#line 84
 this.ScenarioSetup(scenarioInfo);
-#line 41
+#line 85
  testRunner.Given("I clicked the pencil icon on my listings under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 42
+#line 86
  testRunner.When("I edit a language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 43
+#line 87
  testRunner.Then("that updated education should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -215,13 +427,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToEditACertification()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a certification", ((string[])(null)));
-#line 45
+#line 89
 this.ScenarioSetup(scenarioInfo);
-#line 46
+#line 90
  testRunner.Given("I clicked the pencil icon on my listings under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 47
+#line 91
  testRunner.When("I edit a language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 48
+#line 92
  testRunner.Then("that updated certification should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -233,14 +445,14 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToDeleteALanguage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to delete a language", ((string[])(null)));
-#line 51
+#line 95
 this.ScenarioSetup(scenarioInfo);
-#line 52
+#line 96
  testRunner.Given("the language which I have added should be displayed on my listings under Profile " +
                     "page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 53
+#line 97
  testRunner.When("I click the X icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 54
+#line 98
  testRunner.Then("that language should be deleted from my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -252,14 +464,14 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToDeleteASkill()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to delete a skill", ((string[])(null)));
-#line 56
+#line 100
 this.ScenarioSetup(scenarioInfo);
-#line 57
+#line 101
  testRunner.Given("the skill which I have added should be displayed on my listings under Profile pag" +
                     "e", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 58
+#line 102
  testRunner.When("I click the X icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 59
+#line 103
  testRunner.Then("that skill should be deleted from my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -271,14 +483,14 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToDeleteAEducation()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to delete a education", ((string[])(null)));
-#line 61
+#line 105
 this.ScenarioSetup(scenarioInfo);
-#line 62
+#line 106
  testRunner.Given("the education which I have added should be displayed on my listings under Profile" +
                     " page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 63
+#line 107
  testRunner.When("I click the X icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 64
+#line 108
  testRunner.Then("that education should be deleted from my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -290,14 +502,14 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToDeleteACertification()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to delete a certification", ((string[])(null)));
-#line 66
+#line 110
 this.ScenarioSetup(scenarioInfo);
-#line 67
+#line 111
  testRunner.Given("the certification which I have added should be displayed on my listings under Pro" +
                     "file page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 68
+#line 112
  testRunner.When("I click the X icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 69
+#line 113
  testRunner.Then("that certification should be deleted from my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -309,13 +521,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToWriteADescription()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to write a description", ((string[])(null)));
-#line 72
+#line 116
 this.ScenarioSetup(scenarioInfo);
-#line 73
+#line 117
  testRunner.Given("I clicked the pencil icon next to description under profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 74
+#line 118
  testRunner.When("I write about my information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 75
+#line 119
  testRunner.Then("that information should be displayed on description section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -329,10 +541,10 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to set details of availability, Hours and Earn Target un" +
                     "der profile page", ((string[])(null)));
-#line 77
+#line 121
 this.ScenarioSetup(scenarioInfo);
-#line 78
-testRunner.Given("I clicked the pencil icon next to Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 122
+ testRunner.Given("I clicked the pencil icon next to Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -343,13 +555,13 @@ testRunner.Given("I clicked the pencil icon next to Availability", ((string)(nul
         public virtual void CheckIfUserCouldAbleToAddASharedSkillOnMyListings()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a Shared Skill on my listings", ((string[])(null)));
-#line 81
+#line 125
 this.ScenarioSetup(scenarioInfo);
-#line 82
+#line 126
  testRunner.Given("I clicked on the button Share Skill under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 83
+#line 127
  testRunner.When("I add a new shared skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 84
+#line 128
  testRunner.Then("the lists of shared skill you have been posting should be displayed on my listing" +
                     "s", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -362,15 +574,15 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToEditASharedSkillOnMyListings()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a Shared Skill on my listings", ((string[])(null)));
-#line 87
+#line 131
 this.ScenarioSetup(scenarioInfo);
-#line 88
+#line 132
  testRunner.Given("I clicked on the Manage Listings tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 89
+#line 133
  testRunner.When("I clicked the pencil icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 90
+#line 134
  testRunner.And("I edit a shared skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 91
+#line 135
  testRunner.Then("that updated shared skill should be displayed  on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -382,74 +594,111 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckIfUserCouldAbleToDeleteASharedSkillOnMyListings()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to delete a Shared Skill on my listings", ((string[])(null)));
-#line 94
+#line 138
 this.ScenarioSetup(scenarioInfo);
-#line 95
+#line 139
  testRunner.Given("I clicked on the Manage Listings tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 96
+#line 140
  testRunner.When("I clicked the X icon on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 97
+#line 141
  testRunner.And("I clicked the button Yes on Alert page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 98
+#line 142
  testRunner.Then("that shared skill should be deleted from my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if the people could able to look into my details by searching skillname")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if people could able to look into my details by searching skillname")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
-        public virtual void CheckIfThePeopleCouldAbleToLookIntoMyDetailsBySearchingSkillname()
+        public virtual void CheckIfPeopleCouldAbleToLookIntoMyDetailsBySearchingSkillname()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if the people could able to look into my details by searching skillname", ((string[])(null)));
-#line 101
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if people could able to look into my details by searching skillname", ((string[])(null)));
+#line 145
 this.ScenarioSetup(scenarioInfo);
-#line 102
+#line 146
  testRunner.Given("people type skill name on the search bar for \'Test Analyst\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 103
+#line 147
  testRunner.When("people click my Info on a result of user\'s search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 104
+#line 148
  testRunner.Then("the details of my shared skill should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if the people could able to look into my details by exploring categories")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if people could able to look into my details by exploring categories")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
-        public virtual void CheckIfThePeopleCouldAbleToLookIntoMyDetailsByExploringCategories()
+        public virtual void CheckIfPeopleCouldAbleToLookIntoMyDetailsByExploringCategories()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if the people could able to look into my details by exploring categories", ((string[])(null)));
-#line 106
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if people could able to look into my details by exploring categories", ((string[])(null)));
+#line 150
 this.ScenarioSetup(scenarioInfo);
-#line 107
+#line 151
  testRunner.Given("the categories should be displayed on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 108
+#line 152
  testRunner.When("people click Programming & Tech on the category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 109
+#line 153
  testRunner.And("people click QA under the category of Programming & Tech", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 110
+#line 154
  testRunner.And("people click my Info on a result of user\'s search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 111
+#line 155
  testRunner.Then("the details of my shared skill should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if the people could able to look into my details by searching username")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if people could able to look into my details by searching username")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
-        public virtual void CheckIfThePeopleCouldAbleToLookIntoMyDetailsBySearchingUsername()
+        public virtual void CheckIfPeopleCouldAbleToLookIntoMyDetailsBySearchingUsername()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if the people could able to look into my details by searching username", ((string[])(null)));
-#line 113
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if people could able to look into my details by searching username", ((string[])(null)));
+#line 157
 this.ScenarioSetup(scenarioInfo);
-#line 114
+#line 158
  testRunner.Given("the categories should be displayed on the homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 115
+#line 159
  testRunner.When("people fill username on username search bar for \"harris jung\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 116
+#line 160
  testRunner.Then("the details of my shared skill should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if people could able to contact with seller by chat")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        public virtual void CheckIfPeopleCouldAbleToContactWithSellerByChat()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if people could able to contact with seller by chat", ((string[])(null)));
+#line 163
+this.ScenarioSetup(scenarioInfo);
+#line 164
+ testRunner.Given("people should be able to read seller\'s  Info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 165
+ testRunner.When("people click the button chat", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 166
+ testRunner.Then("the chat room should be opened to seller and people both of them", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if people could able to leave a message to seller")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Seller -> Add Profile Details")]
+        public virtual void CheckIfPeopleCouldAbleToLeaveAMessageToSeller()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if people could able to leave a message to seller", ((string[])(null)));
+#line 168
+this.ScenarioSetup(scenarioInfo);
+#line 169
+ testRunner.Given("people should be able to read seller\'s Info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 170
+ testRunner.When("people leave a message to the seller", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 171
+ testRunner.Then("that message should be sent to the seller and then, seller should able to read us" +
+                    "er\'s message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

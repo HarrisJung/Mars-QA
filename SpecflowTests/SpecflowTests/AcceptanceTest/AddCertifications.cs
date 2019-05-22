@@ -9,10 +9,10 @@ using static SpecflowPages.CommonMethods;
 namespace SpecflowTests.AcceptanceTest
 {
     [Binding]
-    //Please add : Utils.Start behind of class name like that public class AddCertification : Utils.Start before running
-    public class AddCertification : Utils.Start
+    //Please add : Utils.Start behind of class name like that public class AddSharedSkill : Utils.Start before running
+    public class AddCertifications
     {
-        [Given(@"I clicked on the Certifications tab under Profile page")]
+        [Given(@"I clicked on the Certifications tab under profile page")]
         public void GivenIClickedOnTheCertificationsTabUnderProfilePage()
         {
             //Wait
@@ -21,16 +21,16 @@ namespace SpecflowTests.AcceptanceTest
             // Click on Profile tab
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[1]/a[4]")).Click();
         }
-        
-        [When(@"I add a new certificate")]
-        public void WhenIAddANewCertificate()
+
+        [When(@"I add new certification (.*) and (.*)")]
+        public void WhenIAddNewCertificationAnd(string certification, string from)
         {
             //Click on a Add new button
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div")).Click();
             //Add Certificate or Award
-            Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[1]/div/input")).SendKeys("Foundation Certificate in Software Testing");
+            Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[1]/div/input")).SendKeys(certification);
             //Add Certificated From
-            Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[1]/input")).SendKeys("ISTQB");
+            Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[1]/input")).SendKeys(from);
             //Click on Year
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select")).Click();
             //Choose the Year
@@ -39,29 +39,34 @@ namespace SpecflowTests.AcceptanceTest
             //Click on a Add button
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[3]/input[1]")).Click();
         }
-        
-        [Then(@"that certificate should be displayed on my listings")]
-        public void ThenThatCertificateShouldBeDisplayedOnMyListings()
+
+        [Then(@"those certifications (.*) and (.*) should be displayed on my listings")]
+        public void ThenThoseCertificationsAndShouldBeDisplayedOnMyListings(string certificaion, string from)
         {
             try
             {
                 //Start the Reports
                 CommonMethods.ExtentReports();
                 Thread.Sleep(1000);
-                CommonMethods.test = CommonMethods.extent.StartTest("Add a certificate");
+                CommonMethods.test = CommonMethods.extent.StartTest("Add certifications");
 
                 Thread.Sleep(1000);
-                string ExpectedValue = "Foundation Certificate in Software Testing";
-                string ActualValue = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody/tr/td[1]")).Text;
-                Thread.Sleep(500);
-                if (ExpectedValue == ActualValue)
+                for (int i = 1; i <= 100; i++)
                 {
-                    CommonMethods.test.Log(LogStatus.Pass, "Test Passed, Added a certificate Successfully");
-                    SaveScreenShotClass.SaveScreenshot(Driver.driver, "certificateAdded");
-                }
+                    string ExpectedName = certificaion;
+                    string ActualName = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[" + i + "]/tr/td[1]")).Text;
+                    Thread.Sleep(500);
+                    if (ExpectedName == ActualName)
+                    {
+                        CommonMethods.test.Log(LogStatus.Pass, "Test Passed, Added certifications Successfully");
+                        SaveScreenShotClass.SaveScreenshot(Driver.driver, "certificationsAdded");
+                        break;
+                    }
+                    else
+                    {
 
-                else
-                    CommonMethods.test.Log(LogStatus.Fail, "Test Failed");
+                    }
+                }
 
             }
             catch (Exception e)
