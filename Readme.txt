@@ -1,7 +1,9 @@
-All test cases consist of that 	1. managing my profile such as add, edit and delete
-				2. managing share skill such as add, edit and delete
-				3. THe ways of that people look into my details by searching 				   as skillname, categories and username
+Amount of Scenarios 	: 75
+Consist of Scenarios 	: 1. Language, Education, Certification, Skill tabs and description under profile detail page
+			  2. Share skill application form
+			  3. Searching descriptions of shared skill
 
-¡ØI have added a reference that System.Windows.Forms for uploading the file on the browser. Please add a reference that System.Windows.Forms
-
-Right click on References under SpecflowTests project -> Click add a reference -> Find the reference, check it then, click OK
+Automated test		: 1. Add Profile details(Language, Skill, Education and Certification		  
+			  2. Create share skill
+			  3. Search Seller details 
+			

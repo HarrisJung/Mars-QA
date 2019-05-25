@@ -90,37 +90,73 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AcceptanceTest\AddLanguages.cs" />
     <Compile Include="AcceptanceTest\AddSharedSkill.cs" />
+    <Compile Include="AcceptanceTest\EditLanguage.cs" />
     <Compile Include="AcceptanceTest\LookIntoMyInfoBySearchingSkillName.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature2.feature.cs">
+    <Compile Include="AcceptanceTest\ProfileDescription.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature2.feature</DependentUpon>
+      <DependentUpon>ProfileDescription.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\SearchSharedSkill.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchSharedSkill.feature</DependentUpon>
     </Compile>
     <Compile Include="AcceptanceTest\AddCertifications.cs" />
     <Compile Include="AcceptanceTest\AddEducations.cs" />
     <Compile Include="AcceptanceTest\AddSkills.cs" />
-    <Compile Include="C:\Users\HarrisVicky\Desktop\Test Analyst\Internship\SpecflowTests-Base\SpecflowTests\SpecflowTests\AcceptanceTest\AddLanguages.cs">
-      <Link>AcceptanceTest\AddLanguages.cs</Link>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature1.feature.cs">
+    <Compile Include="AcceptanceTest\SkillTab.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
+      <DependentUpon>SkillTab.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\EducationTab.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationTab.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\CertificationTab.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CertificationTab.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\DeleteLanguage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AcceptanceTest\LanguageTab.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageTab.feature</DependentUpon>
     </Compile>
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AcceptanceTest\SpecFlowFeature2.feature">
+    <None Include="AcceptanceTest\ProfileDescription.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature2.feature.cs</LastGenOutput>
+      <LastGenOutput>ProfileDescription.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\SearchSharedSkill.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SearchSharedSkill.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\SkillTab.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SkillTab.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\EducationTab.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EducationTab.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\CertificationTab.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CertificationTab.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="AcceptanceTest\SpecFlowFeature1.feature">
+    <None Include="AcceptanceTest\LanguageTab.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+      <LastGenOutput>LanguageTab.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

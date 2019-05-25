@@ -76,3 +76,4 @@ D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csproj.Cor
 D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csproj.CopyComplete
 D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.dll
 D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.pdb
+D:\GitHub\Mars-QA\SpecflowTests\SpecflowPages\obj\Debug\SpecflowPages.csprojAssemblyReference.cache
